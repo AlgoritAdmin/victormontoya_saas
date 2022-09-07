@@ -226,6 +226,61 @@ header {
   grid-column-start: span 2;
 }
 
+.mainCurriculum {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "datosText datosPhoto" "datosText datosPhoto" "tecnologias tecnologias" "expericiaProyec expericiaProyec1";
+  padding: 50px;
+  grid-gap: 100px;
+  color: #E2E2E2;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+.mainCurriculum .datosText {
+  grid-area: datosText;
+}
+.mainCurriculum .datosPhoto {
+  grid-area: datosPhoto;
+  align-items: flex-start;
+}
+.mainCurriculum .datosPhoto img {
+  justify-content: center;
+  padding-left: 30%;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.mainCurriculum .tecnologias {
+  grid-area: tecnologias;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "titleC" "bannerGaleria";
+}
+.mainCurriculum .tecnologias .titleC {
+  grid-area: titleC;
+}
+.mainCurriculum .tecnologias .bannerGaleria {
+  grid-area: bannerGaleria;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: 150x;
+  margin-top: 20px;
+}
+.mainCurriculum .tecnologias .bannerGaleria img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.mainCurriculum .expericiaProyec {
+  grid-area: expericiaProyec;
+}
+.mainCurriculum .expericiaProyec1 {
+  grid-area: expericiaProyec1;
+}
+
 .mainContacto {
   display: grid;
   grid-template-columns: 1fr;
