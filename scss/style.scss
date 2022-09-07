@@ -1,0 +1,14 @@
+@import "constantes.scss";
+@import "footer.scss";
+body {
+    background-color: #202020;
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+header {grid-area: header;}
+main {grid-area: main;}
+footer {grid-area: footer;}

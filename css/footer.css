@@ -1,0 +1,34 @@
+footer {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "parnert" "navFooter" "copyRights";
+  grid-template-rows: auto auto auto;
+}
+
+.parnert {
+  grid-area: parnert;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "textParnert logos";
+  grid-template-rows: auto;
+  align-items: center;
+  -moz-column-gap: 100px;
+  column-gap: 100px;
+  padding: 40px 50px 40px 50px;
+  border-top: grey solid 1px;
+  justify-content: space-between;
+}
+.parnert .logos {
+  display: flex;
+}
+.parnert .logos .logo {
+  width: 180px;
+}
+
+.navFooter {
+  grid-area: navFooter;
+}
+
+.copyRights {
+  grid-area: copyRights;
+}/*# sourceMappingURL=footer.css.map */
