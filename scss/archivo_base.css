@@ -1,27 +1,5 @@
 
 
-body {
-  background-color: #202020;
-  display: grid;
-  grid-template-areas: "header" "main" "footer";
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
-  font-size: 16px;
-  font-family: "Poppins", sans-serif;
-}
-
-header {
-  grid-area: header;
-}
-
-main {
-  grid-area: main;
-}
-
-footer {
-  grid-area: footer;
-}
-
 header {
   background-color: #2c2c2c;
   display: grid;
@@ -83,74 +61,17 @@ header {
   text-align: end;
 }
 
-footer {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-areas: "parnert" "navFooter" "copyRights";
-  grid-template-rows: auto auto auto;
-}
 
-.parnert {
-  grid-area: parnert;
-}
 
-.navFooter {
-  grid-area: navFooter;
-}
 
-.copyRights {
-  grid-area: copyRights;
-}
 
-.parnert {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-areas: "textParnert logos";
-  grid-template-rows: auto;
-  align-items: center;
-  -moz-column-gap: 100px;
-       column-gap: 100px;
-  padding: 40px 50px 40px 50px;
-  border-top: grey solid 1px;
-  justify-content: space-between;
-}
 
-.logos {
-  display: flex;
-}
 
-.parnert .logo {
-  width: 180px;
-}
 
-.navFooter {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-areas: "columnMenus columnMenus columnLogo";
-  grid-template-rows: auto;
-  justify-content: space-between;
-  padding: 80px 50px 80px 50px;
-  border-top: grey solid 1px;
-}
 
-.columnLogo {
-  max-width: 200px;
-}
 
-.navFooter li {
-  padding: 0;
-  font-size: 14px;
-}
 
-.copyRights {
-  background-color: rgba(0, 0, 0, 0.3019607843);
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-areas: "footerRedes footerCopy";
-  grid-template-rows: auto;
-  justify-content: space-between;
-  padding: 30px;
-}
+
 
 .mainContacto {
   display: grid;
