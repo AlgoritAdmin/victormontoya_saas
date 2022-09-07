@@ -7,6 +7,8 @@
     margin-top: 50px;
     margin-bottom: 100px;
     grid-gap: 100px;
+    .videoPortada{grid-area:videoPortada;}
+    .servicios{grid-area:servicios;}
     .servics {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -58,5 +60,4 @@
         }
     }
 }
-.videoPortada{grid-area:videoPortada;}
-.servicios{grid-area:servicios;}
+

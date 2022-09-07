@@ -8,6 +8,12 @@
   margin-bottom: 100px;
   grid-gap: 100px;
 }
+.mainServicio .videoPortada {
+  grid-area: videoPortada;
+}
+.mainServicio .servicios {
+  grid-area: servicios;
+}
 .mainServicio .servics {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -57,12 +63,4 @@
 }
 .mainServicio .servics .servicsImg .galeriaItem:nth-child(8) {
   grid-column-start: span 2;
-}
-
-.videoPortada {
-  grid-area: videoPortada;
-}
-
-.servicios {
-  grid-area: servicios;
 }/*# sourceMappingURL=clientes.css.map */
