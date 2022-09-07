@@ -120,6 +120,45 @@ header {
   display: flex;
 }
 
+.main {
+  display: grid;
+  grid-template-areas: "videoPortada " "servicios";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+}
+
+.videoPortada {
+  grid-area: videoPortada;
+  background-image: url("../assets/img/fondo_web.png");
+  padding: 200px 100px 200px;
+}
+
+.servicios {
+  grid-area: servicios;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "columnServ columnServ columnServTitle";
+  grid-template-rows: auto;
+  align-items: center;
+  -moz-column-gap: 100px;
+  column-gap: 100px;
+  padding: 50px;
+  margin: 50px 0 50px 0;
+}
+.servicios .columnServ {
+  background: rgba(0, 0, 0, 0.3019607843);
+}
+.servicios .columnServ h3 {
+  padding: 20px 30px;
+}
+.servicios .columnServ p {
+  padding: 30px;
+}
+.servicios .columnServ li {
+  padding: 0px 30px 30px;
+  text-align: end;
+}
+
 footer {
   display: grid;
   grid-template-columns: 100%;
