@@ -1,0 +1,63 @@
+.mainPortafolio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "videoPortada videoPortada" "textColunm textColunm1" "cliente cliente" "cliente1 cliente1";
+    grid-template-rows: auto;
+    margin-bottom: 100px;
+    grid-gap: 50px;
+    .videoPortada { grid-area: videoPortada; }
+    .textColunm { grid-area: textColunm; margin-left: 50px;}
+    .textColunm1 { grid-area: textColunm1; margin-right: 50px;}
+    .cliente {
+        grid-area: cliente;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "clienteText clienteImg" "clienteImg1 clienteText1";
+        grid-template-rows: auto;
+        grid-gap: 50px;
+        padding: 50px;
+        .clienteText {
+            grid-area: clienteText;
+            margin-top: 150px;
+        }
+        .clienteImg {
+            grid-area: clienteImg;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            img {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+                    object-fit: cover;
+            }
+        }
+        .clienteItem:nth-child(1) {
+            grid-row-start: span 2;
+        }
+        .clienteImg1 {
+            grid-area: clienteImg1;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+        }
+        .clienteText1 {
+            grid-area: clienteText1;
+            text-align: end;
+            margin-top: 150px;
+            img {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+                    object-fit: cover;
+            }
+        }
+        .clienteItem1:nth-child(2) {
+            grid-row-start: span 2;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    .cliente1 {
+        grid-area: cliente1;
+    }
+}
