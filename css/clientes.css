@@ -1,9 +1,13 @@
-/*Construccion*/
-.mainServicio {
+/*Clases placeholder*/
+.mainServicio .servics, .mainServicio {
   display: grid;
+  grid-template-rows: auto auto;
+}
+
+/*Construccion   @extend*/
+.mainServicio {
   grid-template-areas: "videoPortada " "servicios";
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
   padding: 50px;
   margin-top: 50px;
   margin-bottom: 100px;
@@ -16,10 +20,8 @@
   grid-area: servicios;
 }
 .mainServicio .servics {
-  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-area: "servicsTextI servicsImg" "servicsImg servicsText1";
-  grid-template-rows: auto auto;
 }
 .mainServicio .servics .servicsTextI {
   margin-right: 100px;

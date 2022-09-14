@@ -1,4 +1,15 @@
 $cons:50px;
+/*Clases placeholder*/
+%const{
+    font-size: 14px;
+    color: white;
+    display: block;
+}
+%text{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: white;
+}
 /*Construccion*/
 .mainContacto {
     display: grid;
@@ -25,9 +36,6 @@ $cons:50px;
             input[type=tel],
             select[type=selec],
             textarea {
-            font-family: "Poppins", sans-serif;
-            font-size: 16px;
-            color: white;
             width: 100%;
             outline: none;
             padding: 10px 10px 10px 10px;
@@ -35,33 +43,28 @@ $cons:50px;
             border: 1px solid #E2E2E2;
             margin-bottom: 20px;
             background-color: #181818;
+            @extend %text;
             }
             label {
-                font-size: 14px;
                 font-weight: 600;
-                color: white;
-                display: block;
                 margin-bottom: 5px;
+                @extend %const;
             }
             option {
-                font-size: 14px;
-                color: white;
-                display: block;
                 margin-bottom: 5px;
                 border-radius: 0px;
+                @extend %const;
             }
         }
         input[type=submit] {
             background: rgba(103, 212, 255, 0);
-            font-family: "Poppins", sans-serif;
-            font-size: 16px;
-            color: white;
             border-radius: 1px;
             border: 2px solid white;
                 cursor: pointer;
             margin-top: 2rem;
             padding: 15px;
             width: 30%;
+            @extend %text;
             &:hover {
                 background: white;
                 color: #202020;

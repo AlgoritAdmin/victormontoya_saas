@@ -1,10 +1,14 @@
 $cons:50px;
-/*Construccion*/
-.mainServicio {
+/*Clases placeholder*/
+%grid{
     display: grid;
+    grid-template-rows: auto auto;
+}
+/*Construccion   @extend*/
+.mainServicio {
+    @extend %grid;
     grid-template-areas: "videoPortada " "servicios";
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
     padding: $cons;
     margin-top: $cons;
     margin-bottom: $cons*2;
@@ -12,10 +16,9 @@ $cons:50px;
     .videoPortada{grid-area:videoPortada;}
     .servicios{grid-area:servicios;}
     .servics {
-        display: grid;
+        @extend %grid;
         grid-template-columns: 1fr 1fr;
         grid-area: "servicsTextI servicsImg" "servicsImg servicsText1";
-        grid-template-rows: auto auto;
         .servicsTextI {
             margin-right: $cons*2;
             margin-top: $cons*4;

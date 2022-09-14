@@ -1,4 +1,10 @@
 $cons:50px;
+/*Clases placeholder   @extend*/
+%imagen{
+    width: 100%;
+    -o-object-fit: cover;
+        object-fit: cover;
+}
 /*Construccion*/
 .mainCurriculum {
     display: grid;
@@ -16,10 +22,8 @@ $cons:50px;
         img {
             justify-content: center;
             padding-left: 30%;
-            width: 100%;
             height: auto;
-            -o-object-fit: cover;
-                object-fit: cover;
+            @extend %imagen;
         }
     }
     .tecnologias {
@@ -36,10 +40,8 @@ $cons:50px;
             grid-auto-rows: $cons*3;
             margin-top: $cons/2;
             img {
-                width: 100%;
                 height: 100%;
-                -o-object-fit: cover;
-                    object-fit: cover;
+                @extend %imagen;
             }
         }
     }
