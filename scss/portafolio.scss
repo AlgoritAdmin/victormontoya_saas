@@ -11,6 +11,11 @@ $cons:50px;
     -o-object-fit: cover;
         object-fit: cover;
 }
+%form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
 /*Construccion*/
 .mainPortafolio {
     @extend %folio;
@@ -32,9 +37,7 @@ $cons:50px;
         }
         .clienteImg {
             grid-area: clienteImg;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 10px;
+            @extend %form;
             img {
                 @extend %imag;
             }
@@ -44,9 +47,7 @@ $cons:50px;
         }
         .clienteImg1 {
             grid-area: clienteImg1;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 10px;
+            @extend %form;
         }
         .clienteText1 {
             grid-area: clienteText1;

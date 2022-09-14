@@ -378,6 +378,12 @@ header {
   object-fit: cover;
 }
 
+.mainPortafolio .cliente .clienteImg1, .mainPortafolio .cliente .clienteImg {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
 /*Construccion*/
 .mainPortafolio {
   grid-template-areas: "videoPortada videoPortada" "textColunm textColunm1" "cliente cliente" "cliente1 cliente1";
@@ -407,18 +413,12 @@ header {
 }
 .mainPortafolio .cliente .clienteImg {
   grid-area: clienteImg;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
 }
 .mainPortafolio .cliente .clienteItem:nth-child(2) {
   grid-row-start: span 2;
 }
 .mainPortafolio .cliente .clienteImg1 {
   grid-area: clienteImg1;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
 }
 .mainPortafolio .cliente .clienteText1 {
   grid-area: clienteText1;
