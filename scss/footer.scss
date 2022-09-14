@@ -1,4 +1,11 @@
 $cons:50px;
+/*Clases placeholder   @extend*/
+%footer{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: space-between;
+}
 /*Construccion*/
 footer {
     display: grid;
@@ -8,17 +15,14 @@ footer {
 }
 
 .parnert {
+    @extend %footer;
     grid-area: parnert;
-    display: grid;
-    grid-template-columns: auto;
     grid-template-areas: "textParnert logos";
-    grid-template-rows: auto;
     align-items: center;
     -moz-column-gap: $cons*2;
         column-gap: $cons*2;
     padding: 40px $cons 40px $cons;
     border-top: grey solid 1px;
-    justify-content: space-between;
         .logos {
             display: flex;
             .logo{
@@ -28,12 +32,9 @@ footer {
 }
 
 .navFooter {
+    @extend %footer;
     grid-area: navFooter;
-    display: grid;
-    grid-template-columns: auto;
     grid-template-areas: "columnMenus columnMenus columnLogo";
-    grid-template-rows: auto;
-    justify-content: space-between;
     padding: 80px 50px 80px 50px;
     border-top: grey solid 1px;
     .columnLogo {
@@ -48,10 +49,7 @@ footer {
 .copyRights {
     grid-area: copyRights;
     background-color: rgba(0, 0, 0, 0.3019607843);
-    display: grid;
-    grid-template-columns: auto;
     grid-template-areas: "footerRedes footerCopy";
-    grid-template-rows: auto;
-    justify-content: space-between;
     padding: $cons-20;
+    @extend %footer;
 }
