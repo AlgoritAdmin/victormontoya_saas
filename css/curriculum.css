@@ -1,3 +1,4 @@
+/*Construccion*/
 .mainCurriculum {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -36,9 +37,9 @@
   grid-area: bannerGaleria;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-gap: 20px;
-  grid-auto-rows: 150x;
-  margin-top: 20px;
+  grid-gap: 25px;
+  grid-auto-rows: 150px;
+  margin-top: 25px;
 }
 .mainCurriculum .tecnologias .bannerGaleria img {
   width: 100%;

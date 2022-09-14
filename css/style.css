@@ -159,6 +159,7 @@ header {
   text-align: end;
 }
 
+/*Construccion*/
 .mainServicio {
   display: grid;
   grid-template-areas: "videoPortada " "servicios";
@@ -226,6 +227,8 @@ header {
   grid-column-start: span 2;
 }
 
+/*aplicar operaciones y constantes */
+/*Construccion*/
 .mainCurriculum {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -264,9 +267,9 @@ header {
   grid-area: bannerGaleria;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-gap: 20px;
-  grid-auto-rows: 150x;
-  margin-top: 20px;
+  grid-gap: 25px;
+  grid-auto-rows: 150px;
+  margin-top: 25px;
 }
 .mainCurriculum .tecnologias .bannerGaleria img {
   width: 100%;
@@ -281,6 +284,7 @@ header {
   grid-area: expericiaProyec1;
 }
 
+/*Construccion*/
 .mainContacto {
   display: grid;
   grid-template-columns: 1fr;

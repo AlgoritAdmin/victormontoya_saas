@@ -1,3 +1,4 @@
+/*Construccion*/
 .mainServicio {
   display: grid;
   grid-template-areas: "videoPortada " "servicios";
@@ -63,4 +64,6 @@
 }
 .mainServicio .servics .servicsImg .galeriaItem:nth-child(8) {
   grid-column-start: span 2;
-}/*# sourceMappingURL=clientes.css.map */
+}
+
+/*aplicar operaciones y constantes *//*# sourceMappingURL=clientes.css.map */

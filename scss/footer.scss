@@ -1,3 +1,5 @@
+$cons:50px;
+/*Construccion*/
 footer {
     display: grid;
     grid-template-columns: 100%;
@@ -12,15 +14,15 @@ footer {
     grid-template-areas: "textParnert logos";
     grid-template-rows: auto;
     align-items: center;
-    -moz-column-gap: 100px;
-        column-gap: 100px;
-    padding: 40px 50px 40px 50px;
+    -moz-column-gap: $cons*2;
+        column-gap: $cons*2;
+    padding: 40px $cons 40px $cons;
     border-top: grey solid 1px;
     justify-content: space-between;
         .logos {
             display: flex;
             .logo{
-                width: 180px;
+                width: ($cons*3)+30;
             }
         }
 }
@@ -35,7 +37,7 @@ footer {
     padding: 80px 50px 80px 50px;
     border-top: grey solid 1px;
     .columnLogo {
-        max-width: 200px;
+        max-width: $cons*4;
     }
     .navFooter li {
         padding: 0;
@@ -51,5 +53,5 @@ footer {
     grid-template-areas: "footerRedes footerCopy";
     grid-template-rows: auto;
     justify-content: space-between;
-    padding: 30px;
+    padding: $cons-20;
 }

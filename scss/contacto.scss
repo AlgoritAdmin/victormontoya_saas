@@ -1,11 +1,13 @@
+$cons:50px;
+/*Construccion*/
 .mainContacto {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "titleContact" "contact";
     grid-template-rows: auto auto;
-    padding: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding: $cons;
+    margin-top: $cons;
+    margin-bottom: $cons;
 }
 .contact {
     grid-area: contact;
@@ -13,9 +15,9 @@
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "formContact maps";
     grid-template-rows: auto;
-    -moz-column-gap: 100px;
-        column-gap: 100px;
-    margin: 50px 0 50px 0;
+    -moz-column-gap: $cons*2;
+        column-gap: $cons*2;
+    margin: $cons 0 $cons 0;
     .formContact{
         .inputGroup{
             input[type=text],

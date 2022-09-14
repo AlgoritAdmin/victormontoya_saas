@@ -1,3 +1,5 @@
+$cons:50px;
+/*Construccion*/
 .main {
     display: grid;
     grid-template-areas: "videoPortada " "servicios";
@@ -7,7 +9,7 @@
 .videoPortada {
     grid-area: videoPortada;
     background-image: url("../assets/img/fondo_web.png");
-    padding: 200px 100px 200px;
+    padding: $cons*4 $cons*2 $cons*4;
 }
 .servicios {
     grid-area: servicios;
@@ -16,20 +18,20 @@
     grid-template-areas: "columnServ columnServ columnServTitle";
     grid-template-rows: auto;
     align-items: center;
-    -moz-column-gap: 100px;
-        column-gap: 100px;
-    padding: 50px;
-    margin: 50px 0 50px 0;
+    -moz-column-gap: $cons*2;
+        column-gap: $cons*2;
+    padding: $cons;
+    margin: $cons 0 $cons 0;
     .columnServ {
         background: rgba(0, 0, 0, 0.3019607843);
         h3 {
-            padding: 20px 30px;
+            padding: $cons-30 $cons-20;
         }
         p {
-            padding: 30px;
+            padding: $cons-20;
         }
         li {
-            padding: 0px 30px 30px;
+            padding: 0px $cons-20 $cons-20;
             text-align: end;
         }
     }

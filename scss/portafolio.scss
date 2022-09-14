@@ -1,30 +1,32 @@
+$cons:50px;
+/*Construccion*/
 .mainPortafolio {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "videoPortada videoPortada" "textColunm textColunm1" "cliente cliente" "cliente1 cliente1";
     grid-template-rows: auto;
-    margin-bottom: 100px;
-    grid-gap: 50px;
+    margin-bottom: $cons*2;
+    grid-gap: $cons;
     .videoPortada { grid-area: videoPortada; }
-    .textColunm { grid-area: textColunm; margin-left: 50px;}
-    .textColunm1 { grid-area: textColunm1; margin-right: 50px;}
+    .textColunm { grid-area: textColunm; margin-left: $cons;}
+    .textColunm1 { grid-area: textColunm1; margin-right: $cons;}
     .cliente {
         grid-area: cliente;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "clienteText clienteImg" "clienteImg1 clienteText1";
         grid-template-rows: auto;
-        grid-gap: 50px;
-        padding: 50px;
+        grid-gap: $cons;
+        padding: $cons;
         .clienteText {
             grid-area: clienteText;
-            margin-top: 150px;
+            margin-top: $cons*3;
         }
         .clienteImg {
             grid-area: clienteImg;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-gap: 10px;
+            grid-gap: $cons-40;
             img {
                 width: 100%;
                 height: 100%;
@@ -39,12 +41,12 @@
             grid-area: clienteImg1;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-gap: 10px;
+            grid-gap: $cons-40;
         }
         .clienteText1 {
             grid-area: clienteText1;
             text-align: end;
-            margin-top: 150px;
+            margin-top: $cons*3;
             img {
                 width: 100%;
                 height: 100%;
