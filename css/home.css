@@ -1,3 +1,4 @@
+/*Construccion*/
 .main {
   display: grid;
   grid-template-areas: "videoPortada " "servicios";

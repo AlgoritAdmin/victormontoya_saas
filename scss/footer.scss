@@ -50,6 +50,6 @@ footer {
     grid-area: copyRights;
     background-color: rgba(0, 0, 0, 0.3019607843);
     grid-template-areas: "footerRedes footerCopy";
-    padding: $cons-20;
+    padding: 30px;
     @extend %footer;
 }

@@ -120,6 +120,7 @@ header {
   display: flex;
 }
 
+/*Construccion*/
 .main {
   display: grid;
   grid-template-areas: "videoPortada " "servicios";
@@ -159,12 +160,16 @@ header {
   text-align: end;
 }
 
-/*Construccion*/
-.mainServicio {
+/*Clases placeholder*/
+.mainServicio .servics, .mainServicio {
   display: grid;
+  grid-template-rows: auto auto;
+}
+
+/*Construccion   @extend*/
+.mainServicio {
   grid-template-areas: "videoPortada " "servicios";
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
   padding: 50px;
   margin-top: 50px;
   margin-bottom: 100px;
@@ -177,10 +182,8 @@ header {
   grid-area: servicios;
 }
 .mainServicio .servics {
-  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-area: "servicsTextI servicsImg" "servicsImg servicsText1";
-  grid-template-rows: auto auto;
 }
 .mainServicio .servics .servicsTextI {
   margin-right: 100px;
@@ -227,7 +230,13 @@ header {
   grid-column-start: span 2;
 }
 
-/*aplicar operaciones y constantes */
+/*Clases placeholder*/
+.mainCurriculum .tecnologias .bannerGaleria img, .mainCurriculum .datosPhoto img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 /*Construccion*/
 .mainCurriculum {
   display: grid;
@@ -249,10 +258,7 @@ header {
 .mainCurriculum .datosPhoto img {
   justify-content: center;
   padding-left: 30%;
-  width: 100%;
   height: auto;
-  -o-object-fit: cover;
-  object-fit: cover;
 }
 .mainCurriculum .tecnologias {
   grid-area: tecnologias;
@@ -267,21 +273,35 @@ header {
   grid-area: bannerGaleria;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-gap: 25px;
+  grid-gap: 20px;
   grid-auto-rows: 150px;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 .mainCurriculum .tecnologias .bannerGaleria img {
-  width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
 }
 .mainCurriculum .expericiaProyec {
   grid-area: expericiaProyec;
 }
 .mainCurriculum .expericiaProyec1 {
   grid-area: expericiaProyec1;
+}
+
+/*Clases placeholder*/
+.contact .formContact .inputGroup option, .contact .formContact .inputGroup label {
+  font-size: 14px;
+  color: white;
+  display: block;
+}
+
+.contact .formContact input[type=submit], .contact .formContact .inputGroup input[type=text],
+.contact .formContact .inputGroup input[type=email],
+.contact .formContact .inputGroup input[type=tel],
+.contact .formContact .inputGroup select[type=selec],
+.contact .formContact .inputGroup textarea {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: white;
 }
 
 /*Construccion*/
@@ -310,9 +330,6 @@ header {
 .contact .formContact .inputGroup input[type=tel],
 .contact .formContact .inputGroup select[type=selec],
 .contact .formContact .inputGroup textarea {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  color: white;
   width: 100%;
   outline: none;
   padding: 10px 10px 10px 10px;
@@ -322,24 +339,15 @@ header {
   background-color: #181818;
 }
 .contact .formContact .inputGroup label {
-  font-size: 14px;
   font-weight: 600;
-  color: white;
-  display: block;
   margin-bottom: 5px;
 }
 .contact .formContact .inputGroup option {
-  font-size: 14px;
-  color: white;
-  display: block;
   margin-bottom: 5px;
   border-radius: 0px;
 }
 .contact .formContact input[type=submit] {
   background: rgba(103, 212, 255, 0);
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  color: white;
   border-radius: 1px;
   border: 2px solid white;
   cursor: pointer;
@@ -353,11 +361,23 @@ header {
   font-weight: 600;
 }
 
-.mainPortafolio {
+/*Clases placeholder   @extend*/
+.mainPortafolio .cliente, .mainPortafolio {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "videoPortada videoPortada" "textColunm textColunm1" "cliente cliente" "cliente1 cliente1";
   grid-template-rows: auto;
+}
+
+.mainPortafolio .cliente .clienteItem1 .clienteItem1, .mainPortafolio .cliente .clienteText1 img, .mainPortafolio .cliente .clienteImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+/*Construccion*/
+.mainPortafolio {
+  grid-template-areas: "videoPortada videoPortada" "textColunm textColunm1" "cliente cliente" "cliente1 cliente1";
   margin-bottom: 100px;
   grid-gap: 50px;
 }
@@ -374,10 +394,7 @@ header {
 }
 .mainPortafolio .cliente {
   grid-area: cliente;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "clienteText clienteImg" "clienteImg1 clienteText1";
-  grid-template-rows: auto;
   grid-gap: 50px;
   padding: 50px;
 }
@@ -391,13 +408,7 @@ header {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
 }
-.mainPortafolio .cliente .clienteImg img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-.mainPortafolio .cliente .clienteItem:nth-child(1) {
+.mainPortafolio .cliente .clienteItem:nth-child(2) {
   grid-row-start: span 2;
 }
 .mainPortafolio .cliente .clienteImg1 {
@@ -411,20 +422,22 @@ header {
   text-align: end;
   margin-top: 150px;
 }
-.mainPortafolio .cliente .clienteText1 img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-.mainPortafolio .cliente .clienteItem1:nth-child(2) {
+.mainPortafolio .cliente .clienteItem1:nth-child(1) {
   grid-row-start: span 2;
-  grid-template-columns: repeat(2, 1fr);
 }
 .mainPortafolio .cliente1 {
   grid-area: cliente1;
 }
 
+/*Clases placeholder   @extend*/
+.copyRights, .navFooter, .parnert {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-content: space-between;
+}
+
+/*Construccion*/
 footer {
   display: grid;
   grid-template-columns: 100%;
@@ -434,16 +447,12 @@ footer {
 
 .parnert {
   grid-area: parnert;
-  display: grid;
-  grid-template-columns: auto;
   grid-template-areas: "textParnert logos";
-  grid-template-rows: auto;
   align-items: center;
   -moz-column-gap: 100px;
   column-gap: 100px;
   padding: 40px 50px 40px 50px;
   border-top: grey solid 1px;
-  justify-content: space-between;
 }
 .parnert .logos {
   display: flex;
@@ -454,11 +463,7 @@ footer {
 
 .navFooter {
   grid-area: navFooter;
-  display: grid;
-  grid-template-columns: auto;
   grid-template-areas: "columnMenus columnMenus columnLogo";
-  grid-template-rows: auto;
-  justify-content: space-between;
   padding: 80px 50px 80px 50px;
   border-top: grey solid 1px;
 }
@@ -473,11 +478,7 @@ footer {
 .copyRights {
   grid-area: copyRights;
   background-color: rgba(0, 0, 0, 0.3019607843);
-  display: grid;
-  grid-template-columns: auto;
   grid-template-areas: "footerRedes footerCopy";
-  grid-template-rows: auto;
-  justify-content: space-between;
   padding: 30px;
 }
 

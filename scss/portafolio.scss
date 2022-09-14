@@ -34,7 +34,7 @@ $cons:50px;
             grid-area: clienteImg;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-gap: $cons-40;
+            grid-gap: 10px;
             img {
                 @extend %imag;
             }
@@ -46,7 +46,7 @@ $cons:50px;
             grid-area: clienteImg1;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-gap: $cons-40;
+            grid-gap: 10px;
         }
         .clienteText1 {
             grid-area: clienteText1;
@@ -56,11 +56,11 @@ $cons:50px;
                 @extend %imag;
             }
         }
-        .clienteItem1:nth-child(2) {
+        .clienteItem1 .clienteItem1{
+            @extend %imag;
+        }
+        .clienteItem1:nth-child(1) {
             grid-row-start: span 2;
-            img {
-                @extend %imag;
-            }
         }
     }
     .cliente1 {

@@ -31,7 +31,7 @@ $cons:50px;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-auto-rows: $cons*5;
-            grid-gap: $cons/5;
+            grid-gap: 10px;
             .galeriaItem {
                 position: relative;
                 img {
@@ -47,7 +47,7 @@ $cons:50px;
                     background: rgba(24, 24, 24, 0.2117647059);
                     width: 100%;
                     margin: 0;
-                    padding: $cons/5;
+                    padding: 10px;
                 }
                 &:nth-child(3) {
                     grid-row-start: span 2;
