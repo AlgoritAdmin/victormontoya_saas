@@ -56,8 +56,10 @@ $cons:50px;
                 @extend %imag;
             }
         }
-        .clienteItem1 .clienteItem1{
-            @extend %imag;
+        .clienteImg1 .clienteItem1{
+            img {
+                @extend %imag;
+            }
         }
         .clienteItem1:nth-child(1) {
             grid-row-start: span 2;

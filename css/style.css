@@ -368,7 +368,7 @@ header {
   grid-template-rows: auto;
 }
 
-.mainPortafolio .cliente .clienteItem1 .clienteItem1, .mainPortafolio .cliente .clienteText1 img, .mainPortafolio .cliente .clienteImg img {
+.mainPortafolio .cliente .clienteImg1 .clienteItem1 img, .mainPortafolio .cliente .clienteText1 img, .mainPortafolio .cliente .clienteImg img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
