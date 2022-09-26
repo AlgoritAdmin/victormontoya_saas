@@ -153,6 +153,27 @@ footer {grid-area: footer;}
             padding-left: 0;
         }
     }
+    .mainPortafolio {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "videoPortada" "textColunm" "textColunm1" "cliente" "cliente1";
+        .textColunm{
+            margin-left: 0px;
+            padding: 0 5%;
+        }
+        .textColunm1{
+            margin-right: 0px;
+            padding: 0 5%;
+        }
+        .cliente{
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "clienteText"
+            "clienteImg"
+            "clienteText1"
+            "clienteImg1";
+        }
+    }
 }
 
 
