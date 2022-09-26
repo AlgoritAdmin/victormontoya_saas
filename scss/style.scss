@@ -90,6 +90,14 @@ footer {grid-area: footer;}
     .mainCurriculum p{
         font-size: 13px;
     }
+    .mainCurriculum {
+        .tecnologias {
+            .bannerGaleria {
+                grid-template-columns: repeat(4, 1fr);
+                grid-auto-rows: auto;
+            }
+        }
+    }
 }
 
 
@@ -123,27 +131,27 @@ footer {grid-area: footer;}
     .mainContacto{
         margin-top: 0px;
         margin-bottom: 0px;
-    }
-    .contact{
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "formContact"
-        "maps";
-        grid-template-rows: auto;
-        margin: 50px 0 50px 0;
-    }
-    .maps{
-        height: 400px;
-        margin-bottom: 20px;
+        .contact{
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "formContact"
+            "maps";
+            grid-template-rows: auto;
+            margin: 50px 0 50px 0;
+        }
+        .maps{
+            height: 400px;
+            margin-bottom: 20px;
+        }
     }
     .mainCurriculum {
         grid-gap: 40px;
-    }
-    .mainPortafolio{
-        margin-bottom: 40px;
-    }
-    .datosPhoto img{
-        padding-left: 0;
+        .mainPortafolio{
+            margin-bottom: 40px;
+        }
+        .datosPhoto img{
+            padding-left: 0;
+        }
     }
 }
 
@@ -236,10 +244,16 @@ footer {grid-area: footer;}
         color: #E2E2E2;
         margin-bottom: 50px;
         margin-top: 50px;
+        .datosPhoto img{
+            padding-left: 0;
+        }
+        .tecnologias {
+            .bannerGaleria {
+                grid-gap: 10px;
+            }
+        }
     }
 }
-
-
 
 
 @media screen and (max-width: 660px){

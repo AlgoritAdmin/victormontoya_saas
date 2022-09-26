@@ -46,7 +46,7 @@
   margin-top: 20px;
 }
 .mainCurriculum .tecnologias .bannerGaleria img {
-  height: 100%;
+  height: auto;
 }
 .mainCurriculum .expericiaProyec {
   grid-area: expericiaProyec;
