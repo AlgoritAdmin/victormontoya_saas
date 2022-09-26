@@ -525,6 +525,7 @@ footer {
   }
   .servicios {
     column-gap: 30px;
+    padding: 5%;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "columnServTitle columnServTitle" "columnServ columnServ";
   }
@@ -535,20 +536,23 @@ footer {
   .parnert {
     column-gap: 30px;
   }
-  .servics {
+  .mainServicio {
+    padding: 5%;
+  }
+  .mainServicio .servics {
     grid-template-columns: 1fr;
     grid-area: "servicsTextI" "servicsImg" "servicsTextI1" "servicsImg";
     grid-template-rows: auto auto auto auto;
   }
-  .servicsTextI {
+  .mainServicio .servics .servicsTextI {
     margin-right: 50px;
     margin-top: 0;
     margin-bottom: 40px;
   }
-  .datosPhoto img {
+  .mainServicio .servics .datosPhoto img {
     padding-left: 10%;
   }
-  .datosPhoto img {
+  .mainServicio .servics .datosPhoto img {
     padding-left: 10%;
   }
 }
@@ -569,6 +573,9 @@ footer {
   }
   .mainCurriculum p {
     font-size: 13px;
+  }
+  .mainCurriculum {
+    padding: 5%;
   }
   .mainCurriculum .tecnologias .bannerGaleria {
     grid-template-columns: repeat(4, 1fr);
@@ -602,6 +609,7 @@ footer {
     max-width: 160px;
   }
   .mainContacto {
+    padding: 5%;
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -623,6 +631,9 @@ footer {
   }
   .mainCurriculum .datosPhoto img {
     padding-left: 0;
+  }
+  .mainServicio .servics .servicsImg {
+    grid-auto-rows: 200px;
   }
   .mainPortafolio {
     grid-template-columns: 1fr;
@@ -652,7 +663,7 @@ footer {
 }
 @media screen and (max-width: 740px) {
   .videoPortada {
-    padding: 100px 50px 100px;
+    padding: 100px 5%;
   }
   .columnLogo {
     display: none;
@@ -703,24 +714,25 @@ footer {
     margin-top: 40px;
     margin-bottom: 40px;
   }
-  .servics .servicsImg {
+  .mainServicio .servics .servicsImg {
+    grid-auto-rows: 120px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
   }
-  .galeriaItem h5 {
+  .mainServicio .servics .servicsImg .galeriaItem h5 {
     font-size: 10px;
   }
-  .galeriaItem:nth-child(1) {
+  .mainServicio .servics .servicsImg .galeriaItem:nth-child(1) {
     grid-row-start: span 2;
   }
-  .galeriaItem:nth-child(4) {
+  .mainServicio .servics .servicsImg .galeriaItem:nth-child(4) {
     grid-column-start: span 1;
   }
-  .galeriaItem:nth-child(5) {
+  .mainServicio .servics .servicsImg .galeriaItem:nth-child(5) {
     grid-row-start: span 2;
   }
-  .galeriaItem:nth-child(8) {
+  .mainServicio .servics .servicsImg .galeriaItem:nth-child(8) {
     grid-column-start: span 2;
   }
   .mainPortafolio {
@@ -740,7 +752,6 @@ footer {
   .mainCurriculum {
     grid-template-columns: 1fr;
     grid-template-areas: "datosPhoto" "datosText" "tecnologias" "expericiaProyec" "expericiaProyec1";
-    padding: 50px;
     color: #E2E2E2;
     margin-bottom: 50px;
     margin-top: 50px;
