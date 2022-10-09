@@ -16,13 +16,18 @@ $cons:50px;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
 }
+
 /*Construccion*/
 .mainPortafolio {
     @extend %folio;
     grid-template-areas: "videoPortada videoPortada" "textColunm textColunm1" "cliente cliente" "cliente1 cliente1";
     margin-bottom: $cons*2;
     grid-gap: $cons;
-    .videoPortada { grid-area: videoPortada; }
+    .videoPortada { 
+        grid-area: videoPortada;
+        width: 100%;
+        background-image: linear-gradient(to left top, #202020, #212121, #212223, #212324, #212424, #263232, #2a4141, #2d5151, #317574, #309b97, #29c3bb, #1aecdf);
+    }
     .textColunm { grid-area: textColunm; margin-left: $cons;}
     .textColunm1 { grid-area: textColunm1; margin-right: $cons;}
     .cliente {

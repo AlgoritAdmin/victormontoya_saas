@@ -26,6 +26,8 @@
 }
 .mainPortafolio .videoPortada {
   grid-area: videoPortada;
+  width: 100%;
+  background-image: linear-gradient(to left top, #202020, #212121, #212223, #212324, #212424, #263232, #2a4141, #2d5151, #317574, #309b97, #29c3bb, #1aecdf);
 }
 .mainPortafolio .textColunm {
   grid-area: textColunm;
