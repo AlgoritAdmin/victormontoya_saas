@@ -36,4 +36,8 @@
 .servicios .columnServ li {
   padding: 0px 30px 30px;
   text-align: end;
+}
+.servicios .columnServTitle .columnText h2 {
+  text-align: end;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=home.css.map */
